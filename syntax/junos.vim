@@ -30,13 +30,14 @@ syn keyword junosProtocol   snmp snmptrap ntp syslog ssh ftp ftp-data dns sql
 syn keyword junosProtocol   ospf ospf3 rip ripng isis
 syn keyword junosProtocol   igmp igmp-snooping lldp lldp-med mld mld-snooping msdp mstp mvrp mpls vpls vrrp lacp
 syn keyword junosProtocol   stp sflow vstp dot1x msrp msrpc sunrpc icmp ping pim rstp rsvp netconf
-syn keyword junosProtocol   junos-http junos-https junos-ftp junos-ssh junos-icmp-all junos-ntp junos-smtp
-syn keyword junosProtocol   junos-udp junos-telnet junos-bgp junos-syslog junos-rsh
-syn keyword junosProtocol   junos-nfs junos-nfsd-udp junos-nfsd-tcp
 syn match   junosProtocol   /[ie]\?bgp/
 syn match   junosProtocol   /https\?/
 syn match   junosProtocol   /\s802\.3ad\s/
 syn match   junosProtocol   /\s802\.1Q\s/
+" junos protocol like follows:
+"  junos-http junos-https junos-ftp junos-ssh junos-icmp-all junos-ntp junos-smtp
+"  junos-udp junos-telnet junos-bgp junos-syslog junos-rsh junos-nfs junos-nfsd-udp junos-nfsd-tcp
+syn match   junosProtocol   /\sjunos\-[\-a-z]\+/
 
 syn keyword junosAction     any deny permit accept reject discard disable enable
 
