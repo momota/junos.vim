@@ -8,6 +8,11 @@ Vim syntax for Junos configuration files.
 `show configuration`               | ![config_before](http://momota.github.io/images/20160622_junos-confg_before.png) | ![config_after](http://momota.github.io/images/20160622_junos-confg_after.png)
 `show configuration | display set` |![config-set_before](http://momota.github.io/images/20160622_junos-confg-set_before.png) | ![config_after](http://momota.github.io/images/20160622_junos-confg-set_after.png)
 
+Author
+======
+
+[momota](https://github.com/momota)
+
 License
 =======
 
@@ -37,3 +42,11 @@ Pathogen
         NeoBundle 'momota/junos.vim'
 
 2. Install with `:NeoBundleInstall`.
+
+
+Usage
+=====
+
+Save junos configuration file as `*.junos`.
+
+Or execute `:set ft=junos`
